@@ -1,19 +1,21 @@
 m=input('input length of array');
 arr=rand([1,m]);
-check_arr=arr;
 disp(arr)
 begin=1;
+
 while begin<m
     min=arr(begin);
+    j=begin;% this is location of selected value 
     for i=begin+1:m
         if  min>arr(i)
-            sel=arr(i);
-            arr(i)=min;
-            min=sel;
+            min=arr(i);
+            j=i;
         end
     end
+    sel=arr(begin);
     arr(begin)=min;
-    begin=begin+1;
+    arr(j)=sel;
+    begin=begin+1;s
 end
 disp('result')
 disp(arr)
