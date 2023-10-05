@@ -15,7 +15,7 @@ while begin<m
     sel=arr(begin);
     arr(begin)=min;
     arr(j)=sel;
-    begin=begin+1;s
+    begin=begin+1;
 end
 disp('result')
 disp(arr)
